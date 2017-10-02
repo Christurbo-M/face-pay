@@ -1,0 +1,16 @@
+{
+  "threads": 12,
+  "dataset": {
+    "cfp": "D:/data/cfp"
+  },
+  "model": {
+    "channel": 3,
+    "width": 64,
+    "height": 64
+  },
+  "train": {
+    "batch_size": 64,
+    "prefetch": 4,
+    "shuffle": 1024
+  }
+}
