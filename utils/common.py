@@ -1,4 +1,5 @@
 import json
+import os
 
 
 def get_config(tag: str):
@@ -16,3 +17,7 @@ def get_config(tag: str):
 
 with open("./config.json", "r", encoding="utf8") as _f_cfg:
     _config = json.load(_f_cfg)
+
+
+def setup_graphviz():
+    os.environ["PATH"] = os.environ["PATH"] + ";" + get_config("path.graphviz")
